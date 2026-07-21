@@ -44,11 +44,23 @@ def load_ohlcv(path: str | Path, timeframe: str = "1h") -> pd.DataFrame:
     source = Path(path)
     frame = pd.read_parquet(source) if source.suffix.lower() == ".parquet" else pd.read_csv(source)
     columns = {str(column).lower(): column for column in frame.columns}
+    timestamp_name = next((columns[name] for name in ("timestamp", "time", "datetime", "date", "open_time") if name in columns), None)
+    if timestamp_name is not None:
+        columns["timestamp"] = timestamp_name
     missing = [column for column in REQUIRED_COLUMNS if column not in columns]
     if missing:
         raise ValueError(f"{source}: missing required columns: {missing}")
 
     renamed = frame.rename(columns={columns[key]: key for key in REQUIRED_COLUMNS})
+    optional = {}
+    if "takerbuybase" in columns and "volume" in columns:
+        optional["delta"] = 2 * pd.to_numeric(frame[columns["takerbuybase"]], errors="coerce") - pd.to_numeric(
+            renamed["volume"], errors="coerce"
+        )
+    for output, aliases in (("pressure", ("pressure",)), ("liquidity_score", ("liquidityscore", "liquidity_score"))):
+        source_name = next((columns[name] for name in aliases if name in columns), None)
+        if source_name is not None:
+            optional[output] = pd.to_numeric(frame[source_name], errors="coerce")
     timestamp = renamed["timestamp"]
     if pd.api.types.is_numeric_dtype(timestamp):
         unit = "ms" if timestamp.dropna().abs().max() > 10_000_000_000 else "s"
@@ -57,6 +69,8 @@ def load_ohlcv(path: str | Path, timeframe: str = "1h") -> pd.DataFrame:
         timestamp = pd.to_datetime(timestamp, utc=True)
 
     result = renamed[list(REQUIRED_COLUMNS)].copy()
+    for name, values in optional.items():
+        result[name] = values.to_numpy()
     result["timestamp"] = timestamp
     for column in REQUIRED_COLUMNS[1:]:
         result[column] = pd.to_numeric(result[column], errors="coerce")
@@ -67,9 +81,14 @@ def load_ohlcv(path: str | Path, timeframe: str = "1h") -> pd.DataFrame:
         .set_index("timestamp")
     )
     result = result[(result["high"] >= result["low"]) & (result["volume"] >= 0)]
-    return result.resample(timeframe).agg(
-        {"open": "first", "high": "max", "low": "min", "close": "last", "volume": "sum"}
-    ).dropna()
+    aggregation = {"open": "first", "high": "max", "low": "min", "close": "last", "volume": "sum"}
+    if "delta" in result:
+        aggregation["delta"] = "sum"
+    if "pressure" in result:
+        aggregation["pressure"] = "mean"
+    if "liquidity_score" in result:
+        aggregation["liquidity_score"] = "mean"
+    return result.resample(timeframe).agg(aggregation).dropna(subset=["open", "high", "low", "close", "volume"])
 
 
 def _segment_ids(frame: pd.DataFrame, window: int = 24, minimum: int = 12) -> pd.Series:
@@ -131,9 +150,9 @@ def _trend_record(frame: pd.DataFrame, start: int, end: int, trend_id: str) -> d
         "volume_start": float(thirds[0]["volume"].mean()),
         "volume_middle": float(thirds[1]["volume"].mean()),
         "volume_end": float(thirds[2]["volume"].mean()),
-        "delta_available": 0,
-        "delta_change": None,
-        "buy_sell_pressure": None,
+        "delta_available": int("delta" in segment),
+        "delta_change": float(segment["delta"].iloc[-1] - segment["delta"].iloc[0]) if "delta" in segment else None,
+        "buy_sell_pressure": float(segment["pressure"].mean()) if "pressure" in segment else None,
         "swing_high_strength": float((segment["high"].max() - close.iloc[-1]) / max(close.iloc[-1], 1e-12)),
         "swing_low_strength": float((close.iloc[-1] - segment["low"].min()) / max(close.iloc[-1], 1e-12)),
         "feature_json": json.dumps(_native(_window_features(segment, "trend")), sort_keys=True),
@@ -155,8 +174,8 @@ def _range_record(frame: pd.DataFrame, start: int, end: int, range_id: str) -> d
         "upper_touches": int((segment["high"] >= high * 0.998).sum()),
         "lower_touches": int((segment["low"] <= low * 1.002).sum()),
         "volume_mean": float(segment["volume"].mean()),
-        "delta_available": 0,
-        "delta_behavior": "unavailable",
+        "delta_available": int("delta" in segment),
+        "delta_behavior": "available" if "delta" in segment else "unavailable",
         "successful_breakout": None,
         "false_breakout": None,
         "feature_json": json.dumps(_native(_window_features(segment, "range")), sort_keys=True),
@@ -184,6 +203,14 @@ def extract_behavior(asset: str, frame: pd.DataFrame) -> dict[str, list[dict[str
         start, end = frame.index.get_loc(group.index[0]), frame.index.get_loc(group.index[-1])
         record = _range_record(frame, start, end, f"{asset}-range-{len(ranges) + 1:05d}")
         record["asset"] = asset
+        after = frame.iloc[end + 1 : end + 13]
+        if not after.empty:
+            range_high, range_low = group["high"].max(), group["low"].min()
+            broke_up = after["high"] > range_high * 1.001
+            broke_down = after["low"] < range_low * 0.999
+            broke = broke_up | broke_down
+            record["successful_breakout"] = int(bool(broke.any() and (after["close"].iloc[-1] > range_high or after["close"].iloc[-1] < range_low)))
+            record["false_breakout"] = int(bool(broke.any() and not record["successful_breakout"]))
         ranges.append(record)
 
     corrections: list[dict[str, Any]] = []
@@ -210,9 +237,17 @@ def extract_behavior(asset: str, frame: pd.DataFrame) -> dict[str, list[dict[str
                     "volume_change": float(part["volume"].iloc[-1] / max(part["volume"].iloc[0], 1e-12) - 1),
                     "delta_behavior": "unavailable",
                     "start_type": "opposite_price_move",
-                    "outcome": "continuation" if cend < end else "unknown",
+                    "outcome": "unknown",
                 }
             )
+            after = frame.iloc[cend + 1 : cend + 13]
+            if not after.empty:
+                follow_through = after["close"].iloc[-1] / part["close"].iloc[-1] - 1
+                parent_direction = 1 if trend["movement_pct"] >= 0 else -1
+                if follow_through * parent_direction > 0:
+                    corrections[-1]["outcome"] = "continuation"
+                elif follow_through * parent_direction < 0:
+                    corrections[-1]["outcome"] = "reversal"
     for trend in trends:
         trend["correction_count"] = sum(c["parent_trend_id"] == trend["trend_id"] for c in corrections)
     return {"trends": trends, "corrections": corrections, "ranges": ranges}
