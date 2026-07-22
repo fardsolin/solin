@@ -1,0 +1,218 @@
+{
+  "definition": {
+    "min_score": 3,
+    "follow_through": "closes stay beyond the signal-bar close for more than 4 bars",
+    "correction": "pullback >= 1 ATR from the running extreme",
+    "fates": {
+      "continuation": "new extreme beyond the pre-correction extreme within 24 bars",
+      "reversal": "price breaks the signal bar's opposite side before a new extreme",
+      "range": "neither within 24 bars"
+    },
+    "note": "Forward data used only for grading; no signals produced."
+  },
+  "candles": 53099,
+  "trend_like_events": 25313,
+  "followed_through_more_than_4_bars": 6105,
+  "followed_through_pct": 24.118042112748387,
+  "follow_through_by_score": {
+    "3": {
+      "events": 16031,
+      "more_than_4": 3890,
+      "more_than_4_pct": 24.265485621608136
+    },
+    "4": {
+      "events": 5968,
+      "more_than_4": 1429,
+      "more_than_4_pct": 23.944369973190348
+    },
+    "5": {
+      "events": 1666,
+      "more_than_4": 385,
+      "more_than_4_pct": 23.10924369747899
+    },
+    "6": {
+      "events": 1648,
+      "more_than_4": 401,
+      "more_than_4_pct": 24.33252427184466
+    }
+  },
+  "correction_walk_sampled_events": 6105,
+  "correction_fate_counts": {
+    "continuation": 16376,
+    "reversal": 3696,
+    "range": 2409
+  },
+  "trend_death_by_correction_number": {
+    "1": {
+      "reversal": 1544,
+      "range": 108
+    },
+    "2": {
+      "reversal": 974,
+      "range": 270
+    },
+    "3": {
+      "reversal": 602,
+      "range": 367
+    },
+    "4": {
+      "reversal": 287,
+      "range": 346
+    },
+    "5": {
+      "reversal": 142,
+      "range": 265
+    },
+    "6": {
+      "reversal": 60,
+      "range": 238
+    },
+    "7": {
+      "reversal": 37,
+      "range": 190
+    },
+    "8": {
+      "reversal": 17,
+      "range": 130
+    },
+    "9": {
+      "reversal": 18,
+      "range": 118
+    },
+    "10": {
+      "reversal": 6,
+      "range": 91
+    },
+    "11": {
+      "reversal": 4,
+      "range": 60
+    },
+    "12": {
+      "reversal": 2,
+      "range": 57
+    },
+    "13": {
+      "reversal": 1,
+      "range": 48
+    },
+    "14": {
+      "reversal": 0,
+      "range": 26
+    },
+    "15": {
+      "reversal": 0,
+      "range": 30
+    },
+    "16": {
+      "reversal": 0,
+      "range": 16
+    },
+    "17": {
+      "reversal": 1,
+      "range": 8
+    },
+    "18": {
+      "reversal": 1,
+      "range": 8
+    },
+    "19": {
+      "reversal": 0,
+      "range": 8
+    },
+    "20": {
+      "reversal": 0,
+      "range": 10
+    },
+    "21": {
+      "reversal": 0,
+      "range": 5
+    },
+    "22": {
+      "reversal": 0,
+      "range": 5
+    },
+    "23": {
+      "reversal": 0,
+      "range": 2
+    },
+    "24": {
+      "reversal": 0,
+      "range": 2
+    },
+    "25": {
+      "reversal": 0,
+      "range": 1
+    }
+  },
+  "correction_profiles": {
+    "survived_continuation": {
+      "count": 16376,
+      "duration_bars": {
+        "mean": 4.8183317049340495,
+        "median": 3.0
+      },
+      "depth_atr": {
+        "mean": 2.2894120023817393,
+        "median": 1.7998493053378384
+      },
+      "depth_pct_of_move": {
+        "mean": 68.00633746966723,
+        "median": 55.980494767723656
+      },
+      "volume_vs_pre_move": {
+        "mean": 2.0025797605758635,
+        "median": 1.547086291466163
+      },
+      "opposing_body_share": {
+        "mean": 0.3170183995174395,
+        "median": 0.38461538461538464
+      }
+    },
+    "killed_reversal": {
+      "count": 3696,
+      "duration_bars": {
+        "mean": 6.717261904761905,
+        "median": 5.0
+      },
+      "depth_atr": {
+        "mean": 3.8607184506872483,
+        "median": 3.169914003738371
+      },
+      "depth_pct_of_move": {
+        "mean": 173.73840042449322,
+        "median": 155.73031389837718
+      },
+      "volume_vs_pre_move": {
+        "mean": 1.5486996790389311,
+        "median": 1.2513102776302647
+      },
+      "opposing_body_share": {
+        "mean": 0.5331698212061443,
+        "median": 0.6190476190476191
+      }
+    },
+    "faded_into_range": {
+      "count": 2409,
+      "duration_bars": {
+        "mean": 24.0,
+        "median": 24.0
+      },
+      "depth_atr": {
+        "mean": 5.6595062648984475,
+        "median": 4.4320192298141645
+      },
+      "depth_pct_of_move": {
+        "mean": 78.45935216413461,
+        "median": 74.52930570744547
+      },
+      "volume_vs_pre_move": {
+        "mean": 1.173002954325022,
+        "median": 0.9204002515067288
+      },
+      "opposing_body_share": {
+        "mean": 0.5363048291130482,
+        "median": 0.5416666666666666
+      }
+    }
+  }
+}
