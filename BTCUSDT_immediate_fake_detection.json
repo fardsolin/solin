@@ -1,0 +1,137 @@
+{
+  "definition": {
+    "min_score": 3,
+    "immediate_fake": "close returns through the signal-bar close on bar 1 or bar 2 (never reaches a correction)",
+    "hard_fake": "an immediate fake that also breaks the signal bar's opposite extreme within 5 bars",
+    "survived": "closes held beyond the signal close for at least 2 bars; graded at its first correction",
+    "note": "Bar-1 features are observable at bar-1 close (causal for a bar-2 decision). Forward data used only for grading."
+  },
+  "trend_like_events": 25312,
+  "counts": {
+    "immediate_fake_bar1": 13282,
+    "immediate_fake_bar2": 2994,
+    "survived_to_move": 9036
+  },
+  "immediate_fake_pct": 64.30151706700379,
+  "fake_bar1_pct": 52.473135271807834,
+  "fake_bar2_pct": 11.828381795195954,
+  "hard_fake_share_of_immediate_fakes_pct": 70.73605308429589,
+  "bar1_features": {
+    "immediate_fakes": {
+      "count": 16276,
+      "close_location": {
+        "mean": 0.3544362627932736,
+        "median": 0.3090158390508142
+      },
+      "body_ratio": {
+        "mean": 0.3985101056498998,
+        "median": 0.37544144780915145
+      },
+      "directional_body": {
+        "mean": 0.18419759154583434,
+        "median": 0.0
+      },
+      "made_new_extreme": {
+        "mean": 0.42344556402064387,
+        "median": 0.0
+      },
+      "closed_back_past_signal_mid": {
+        "mean": 0.57532563283362,
+        "median": 1.0
+      },
+      "volume_vs_signal": {
+        "mean": 0.9428810509658689,
+        "median": 0.8045108561180958
+      },
+      "range_atr": {
+        "mean": 1.2228139608979454,
+        "median": 1.0139705999457855
+      }
+    },
+    "survivors": {
+      "count": 9036,
+      "close_location": {
+        "mean": 0.7140196237786792,
+        "median": 0.7472464791140239
+      },
+      "body_ratio": {
+        "mean": 0.4624637116850965,
+        "median": 0.4666985971528397
+      },
+      "directional_body": {
+        "mean": 0.9995573262505534,
+        "median": 1.0
+      },
+      "made_new_extreme": {
+        "mean": 0.6306994245241258,
+        "median": 1.0
+      },
+      "closed_back_past_signal_mid": {
+        "mean": 0.19853917662682602,
+        "median": 0.0
+      },
+      "volume_vs_signal": {
+        "mean": 1.1228699837286429,
+        "median": 0.868849205391394
+      },
+      "range_atr": {
+        "mean": 1.442293784396298,
+        "median": 1.1701890690950014
+      }
+    }
+  },
+  "first_correction_fates_sampled": {
+    "continuation": 2768,
+    "reversal": 1678,
+    "range": 72,
+    "no_correction": 0
+  },
+  "first_correction_early_evidence": {
+    "trend_survived": {
+      "count": 2768,
+      "first2_depth_atr": {
+        "mean": 0.8275367877634059,
+        "median": 0.6852012611851398
+      },
+      "first2_opposing_body_share": {
+        "mean": 0.23663294797687862,
+        "median": 0.0
+      },
+      "first2_volume_vs_pre_move": {
+        "mean": 1.7984733804757806,
+        "median": 1.4965059309065074
+      },
+      "first2_close_location_trendward": {
+        "mean": 0.619862128995501,
+        "median": 0.6228229701431545
+      },
+      "first2_opposing_body_ratio": {
+        "mean": 0.4682908039470668,
+        "median": 0.4644971548416804
+      }
+    },
+    "trend_killed": {
+      "count": 1750,
+      "first2_depth_atr": {
+        "mean": 1.6733787959413442,
+        "median": 1.5224307300225242
+      },
+      "first2_opposing_body_share": {
+        "mean": 0.43114285714285716,
+        "median": 0.5
+      },
+      "first2_volume_vs_pre_move": {
+        "mean": 1.4431063080821922,
+        "median": 1.2087711558902843
+      },
+      "first2_close_location_trendward": {
+        "mean": 0.5322157787167073,
+        "median": 0.5365393967116004
+      },
+      "first2_opposing_body_ratio": {
+        "mean": 0.42151217823158,
+        "median": 0.41648378204213
+      }
+    }
+  }
+}
