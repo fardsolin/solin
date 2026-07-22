@@ -1,0 +1,94 @@
+{
+  "definition": {
+    "signature": [
+      "structural_breakout_20",
+      "range_expansion",
+      "volume_expansion",
+      "strong_body",
+      "directional_close",
+      "slope_aligned"
+    ],
+    "min_score": 3,
+    "horizon_bars": 48,
+    "real_trend": "+4.0 ATR reached before -2.0 ATR",
+    "note": "Forward data is used for evaluation labels only, never in the signature."
+  },
+  "candles": 53099,
+  "trend_like_events": 25314,
+  "by_score": {
+    "3": {
+      "events": 16031,
+      "real": 4354,
+      "fake": 9524,
+      "no_resolution": 2129,
+      "ambiguous_same_bar": 24,
+      "real_rate_of_decided_pct": 31.37339674304655,
+      "real_rate_of_all_pct": 27.159877736884784
+    },
+    "4": {
+      "events": 5969,
+      "real": 1653,
+      "fake": 3533,
+      "no_resolution": 778,
+      "ambiguous_same_bar": 5,
+      "real_rate_of_decided_pct": 31.874276899344387,
+      "real_rate_of_all_pct": 27.693080918076728
+    },
+    "5": {
+      "events": 1666,
+      "real": 484,
+      "fake": 995,
+      "no_resolution": 185,
+      "ambiguous_same_bar": 2,
+      "real_rate_of_decided_pct": 32.72481406355646,
+      "real_rate_of_all_pct": 29.051620648259302
+    },
+    "6": {
+      "events": 1648,
+      "real": 510,
+      "fake": 988,
+      "no_resolution": 146,
+      "ambiguous_same_bar": 4,
+      "real_rate_of_decided_pct": 34.045393858477965,
+      "real_rate_of_all_pct": 30.94660194174757
+    }
+  },
+  "by_feature": {
+    "structural_breakout_20": {
+      "real": 1258,
+      "fake": 2522,
+      "other": 454,
+      "real_rate_of_decided_pct": 33.280423280423285
+    },
+    "range_expansion": {
+      "real": 4924,
+      "fake": 10416,
+      "other": 2030,
+      "real_rate_of_decided_pct": 32.09908735332464
+    },
+    "volume_expansion": {
+      "real": 5606,
+      "fake": 11847,
+      "other": 2691,
+      "real_rate_of_decided_pct": 32.12055234057182
+    },
+    "strong_body": {
+      "real": 4289,
+      "fake": 9379,
+      "other": 2076,
+      "real_rate_of_decided_pct": 31.379865378987414
+    },
+    "directional_close": {
+      "real": 3968,
+      "fake": 8558,
+      "other": 1875,
+      "real_rate_of_decided_pct": 31.67810953217308
+    },
+    "slope_aligned": {
+      "real": 5109,
+      "fake": 10885,
+      "other": 2300,
+      "real_rate_of_decided_pct": 31.943228710766537
+    }
+  }
+}
