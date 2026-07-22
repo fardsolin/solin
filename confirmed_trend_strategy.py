@@ -310,11 +310,12 @@ def write_report(full: dict[str, Any], ex2020: dict[str, Any], validation: dict[
 def main() -> None:
     parser = argparse.ArgumentParser(description="Backtest the confirmed-trend strategy.")
     parser.add_argument("--input", required=True)
+    parser.add_argument("--timeframe", default="1h")
     parser.add_argument("--output", default="BTCUSDT_confirmed_trend_backtest.json")
     parser.add_argument("--report-output", default="BTCUSDT_confirmed_trend_backtest.md")
     args = parser.parse_args()
 
-    frame = load_ohlcv(args.input)
+    frame = load_ohlcv(args.input, timeframe=args.timeframe)
     full = run_backtest(frame)
     ex2020 = run_backtest(frame[frame.index >= "2021-01-01"])
     validation = validate_causality(frame)
