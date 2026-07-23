@@ -1,0 +1,240 @@
+{
+  "overall": {
+    "trades": 370,
+    "wins": 159,
+    "losses": 211,
+    "win_rate_pct": 42.972972972972975,
+    "gross_win": 8797.270121258956,
+    "gross_loss": -8448.140954834298,
+    "net_pnl": 349.12916642465825,
+    "profit_factor": 1.0413261530899145,
+    "avg_win_r": 1.0921066974822975,
+    "avg_loss_r": -0.7402252011611555,
+    "expectancy_r": 0.04718229041805805,
+    "median_win_duration_hours": 13.0,
+    "median_loss_duration_hours": 6.0
+  },
+  "loss_by_exit_category": {
+    "risk_stop": {
+      "count": 116,
+      "net_pnl": -6602.528678361628,
+      "r_sum": -122.41923964142852,
+      "avg_r": -1.0553382727709355,
+      "share_of_loss_pct": 78.15362827940801
+    },
+    "correction_exit": {
+      "count": 95,
+      "net_pnl": -1845.6122764726701,
+      "r_sum": -33.768277803575316,
+      "avg_r": -0.3554555558271086,
+      "share_of_loss_pct": 21.84637172059199
+    }
+  },
+  "loss_by_side": {
+    "long": {
+      "count": 119,
+      "net_pnl": -4727.309639579495,
+      "r_sum": -86.9542626157612,
+      "avg_r": -0.7307080892080773,
+      "share_of_loss_pct": 55.95680357196663
+    },
+    "short": {
+      "count": 92,
+      "net_pnl": -3720.8313152547994,
+      "r_sum": -69.2332548292427,
+      "avg_r": -0.752535378578725,
+      "share_of_loss_pct": 44.04319642803331
+    }
+  },
+  "loss_by_year": {
+    "2024": {
+      "count": 46,
+      "net_pnl": -1856.1851077580795,
+      "r_sum": -32.43754713723619,
+      "avg_r": -0.7051640682007867,
+      "share_of_loss_pct": 21.971521517948993
+    },
+    "2021": {
+      "count": 38,
+      "net_pnl": -1743.7745624462793,
+      "r_sum": -29.187538923956254,
+      "avg_r": -0.7680931295777962,
+      "share_of_loss_pct": 20.640926468543775
+    },
+    "2025": {
+      "count": 43,
+      "net_pnl": -1482.8070800582095,
+      "r_sum": -33.16333955949922,
+      "avg_r": -0.7712404548720749,
+      "share_of_loss_pct": 17.551874287913005
+    },
+    "2023": {
+      "count": 28,
+      "net_pnl": -1292.5618841811918,
+      "r_sum": -17.476413678728626,
+      "avg_r": -0.6241576313831653,
+      "share_of_loss_pct": 15.299956417530488
+    },
+    "2022": {
+      "count": 26,
+      "net_pnl": -1180.2778489603556,
+      "r_sum": -21.80941627544854,
+      "avg_r": -0.8388237029018669,
+      "share_of_loss_pct": 13.970858858420948
+    },
+    "2020": {
+      "count": 26,
+      "net_pnl": -792.8347498413711,
+      "r_sum": -19.70900236329977,
+      "avg_r": -0.7580385524346066,
+      "share_of_loss_pct": 9.384724450977414
+    },
+    "2026": {
+      "count": 4,
+      "net_pnl": -99.69972158880933,
+      "r_sum": -2.4042595068352672,
+      "avg_r": -0.6010648767088168,
+      "share_of_loss_pct": 1.1801379986653506
+    }
+  },
+  "loss_by_duration_bucket": {
+    "9-24h": {
+      "count": 56,
+      "net_pnl": -2456.84975155786,
+      "r_sum": -44.99047940384842,
+      "avg_r": -0.8034014179258646,
+      "share_of_loss_pct": 29.08154308377125
+    },
+    "2-3h": {
+      "count": 56,
+      "net_pnl": -1990.9103585183434,
+      "r_sum": -36.28510511427396,
+      "avg_r": -0.647948305612035,
+      "share_of_loss_pct": 23.566254033428272
+    },
+    "4-8h": {
+      "count": 55,
+      "net_pnl": -1744.0895685979356,
+      "r_sum": -32.00809973364714,
+      "avg_r": -0.5819654497026753,
+      "share_of_loss_pct": 20.64465517233009
+    },
+    ">24h": {
+      "count": 30,
+      "net_pnl": -1506.4224456408754,
+      "r_sum": -27.97245552047827,
+      "avg_r": -0.9324151840159424,
+      "share_of_loss_pct": 17.8314075687723
+    },
+    "<=1h": {
+      "count": 14,
+      "net_pnl": -749.8688305192813,
+      "r_sum": -14.931377672756092,
+      "avg_r": -1.066526976625435,
+      "share_of_loss_pct": 8.876140141698064
+    }
+  },
+  "fast_losers": {
+    "definition": "losers closed within 2 hours of entry (immediate fakes)",
+    "count": 58,
+    "net_pnl": -2266.482621914979,
+    "share_of_losers_pct": 27.488151658767773,
+    "share_of_loss_pct": 26.828181892704155
+  },
+  "streaks": {
+    "max_consecutive_losers": 12,
+    "worst_streak_net_pnl": -610.2822053531709
+  },
+  "biggest_losses": [
+    {
+      "entry_time": "2023-07-05T12:00:00+00:00",
+      "exit_time": "2023-07-06T07:00:00+00:00",
+      "side": "short",
+      "net_pnl": -93.49138051055178,
+      "r_multiple": -1.0894809783008688,
+      "duration_hours": 19.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-07-10T20:00:00+00:00",
+      "exit_time": "2023-07-10T21:00:00+00:00",
+      "side": "long",
+      "net_pnl": -87.11915548177417,
+      "r_multiple": -1.049526859790363,
+      "duration_hours": 1.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-08-14T16:00:00+00:00",
+      "exit_time": "2023-08-14T18:00:00+00:00",
+      "side": "long",
+      "net_pnl": -83.83861710395527,
+      "r_multiple": -1.1204757896516933,
+      "duration_hours": 2.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-08-02T01:00:00+00:00",
+      "exit_time": "2023-08-02T15:00:00+00:00",
+      "side": "long",
+      "net_pnl": -82.88938241613981,
+      "r_multiple": -1.047716078032925,
+      "duration_hours": 14.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-09-27T11:00:00+00:00",
+      "exit_time": "2023-09-27T14:00:00+00:00",
+      "side": "long",
+      "net_pnl": -79.07612905993763,
+      "r_multiple": -1.1275645130923635,
+      "duration_hours": 3.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-09-18T12:00:00+00:00",
+      "exit_time": "2023-09-18T17:00:00+00:00",
+      "side": "long",
+      "net_pnl": -77.58600715449928,
+      "r_multiple": -1.0740348304467613,
+      "duration_hours": 5.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-02-26T20:00:00+00:00",
+      "exit_time": "2023-02-27T16:00:00+00:00",
+      "side": "long",
+      "net_pnl": -77.02129642397328,
+      "r_multiple": -1.0747927152396364,
+      "duration_hours": 20.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-03-17T12:00:00+00:00",
+      "exit_time": "2023-03-17T14:00:00+00:00",
+      "side": "long",
+      "net_pnl": -76.87169049930031,
+      "r_multiple": -1.0340322542581286,
+      "duration_hours": 2.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-04-11T02:00:00+00:00",
+      "exit_time": "2023-04-17T11:00:00+00:00",
+      "side": "long",
+      "net_pnl": -75.88485615015708,
+      "r_multiple": -1.0437619446338922,
+      "duration_hours": 153.0,
+      "exit_category": "risk_stop"
+    },
+    {
+      "entry_time": "2023-11-09T04:00:00+00:00",
+      "exit_time": "2023-11-09T16:00:00+00:00",
+      "side": "long",
+      "net_pnl": -73.34356903005046,
+      "r_multiple": -1.0524416523332283,
+      "duration_hours": 12.0,
+      "exit_category": "risk_stop"
+    }
+  ]
+}
