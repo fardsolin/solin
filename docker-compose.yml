@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    volumes:
+      - bot_data:/app/data
+    restart: unless-stopped
+    # اگر بات کرش کند، Docker خودش دوباره بالا می‌آورد (24/7 واقعی، برخلاف Codespace)
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    env_file: .env
+    volumes:
+      - bot_data:/app/data
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    depends_on:
+      - bot
+
+volumes:
+  bot_data:
