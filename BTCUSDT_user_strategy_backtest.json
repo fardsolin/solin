@@ -1,0 +1,747 @@
+{
+  "parameters": {
+    "initial_equity": 1000.0,
+    "leverage": 20.0,
+    "risk_fraction": 0.03,
+    "fee_rate": 0.0004,
+    "slippage_rate": 0.0002
+  },
+  "raw_script_execution": {
+    "trades": 1,
+    "win_rate_pct": 0.0,
+    "sum_of_returns_pct": -512.2481823783118,
+    "compounded_return_pct": -512.2481823783118,
+    "execution": "same-candle close; contains same-bar lookahead; kept only for comparison"
+  },
+  "causal_execution": {
+    "trades": 80,
+    "final_equity": 239.75851935328745,
+    "net_pnl": -760.2414806467125,
+    "return_pct": -76.02414806467127,
+    "win_rate_pct": 20.0,
+    "profit_factor": 0.09003403250004922,
+    "average_trade": -9.503018508083903
+  },
+  "causal_trades": [
+    {
+      "side": "SHORT",
+      "entry_time": "2020-01-08T17:00:00+00:00",
+      "exit_time": "2020-01-14T01:00:00+00:00",
+      "entry_price": 8113.377,
+      "exit_price": 8324.82591797143,
+      "net_pnl": -31.178340893781865,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-02-19T10:00:00+00:00",
+      "exit_time": "2020-06-01T23:00:00+00:00",
+      "entry_price": 10110.837428,
+      "exit_price": 10290.8151794856,
+      "net_pnl": -30.73390888616711,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-07-28T09:00:00+00:00",
+      "exit_time": "2020-07-28T14:00:00+00:00",
+      "entry_price": 10723.094952,
+      "exit_price": 11154.902629276114,
+      "net_pnl": -28.862072295122307,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-08-02T16:00:00+00:00",
+      "exit_time": "2020-08-05T13:00:00+00:00",
+      "entry_price": 11081.403276000001,
+      "exit_price": 11599.879930940915,
+      "net_pnl": -27.878791764565765,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-08-18T04:00:00+00:00",
+      "exit_time": "2020-10-21T14:00:00+00:00",
+      "entry_price": 12296.970114,
+      "exit_price": 12530.791485451371,
+      "net_pnl": -27.86198332355363,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-11-09T05:00:00+00:00",
+      "exit_time": "2020-11-09T11:00:00+00:00",
+      "entry_price": 15379.153554,
+      "exit_price": 15701.394633567943,
+      "net_pnl": -26.854026560504256,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-11-25T03:00:00+00:00",
+      "exit_time": "2020-11-25T13:00:00+00:00",
+      "entry_price": 18972.014838000003,
+      "exit_price": 19394.728722396172,
+      "net_pnl": -25.937215256091378,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2020-11-27T01:00:00+00:00",
+      "exit_time": "2020-11-27T02:00:00+00:00",
+      "entry_price": 17398.819068,
+      "exit_price": 17303.018704,
+      "net_pnl": -3.1596876644196064,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-11-27T12:00:00+00:00",
+      "exit_time": "2020-11-28T13:00:00+00:00",
+      "entry_price": 16786.102108,
+      "exit_price": 17356.9328004216,
+      "net_pnl": -24.648316537521932,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-12-02T03:00:00+00:00",
+      "exit_time": "2020-12-03T15:00:00+00:00",
+      "entry_price": 18672.654722,
+      "exit_price": 19476.879318944397,
+      "net_pnl": -23.741497141501615,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2020-12-17T13:00:00+00:00",
+      "exit_time": "2020-12-17T14:00:00+00:00",
+      "entry_price": 23154.63,
+      "exit_price": 22828.163454,
+      "net_pnl": -7.469486017918573,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-12-18T04:00:00+00:00",
+      "exit_time": "2020-12-19T16:00:00+00:00",
+      "entry_price": 22807.017684000002,
+      "exit_price": 23830.224204393948,
+      "net_pnl": -22.76190475614857,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2020-12-22T03:00:00+00:00",
+      "exit_time": "2020-12-22T04:00:00+00:00",
+      "entry_price": 22962.171516000002,
+      "exit_price": 22846.619762,
+      "net_pnl": -3.150697002796565,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2020-12-27T18:00:00+00:00",
+      "exit_time": "2020-12-30T03:00:00+00:00",
+      "entry_price": 26798.129302,
+      "exit_price": 28082.386084717542,
+      "net_pnl": -21.935817923263233,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-01-03T23:00:00+00:00",
+      "exit_time": "2021-01-06T04:00:00+00:00",
+      "entry_price": 33112.516172,
+      "exit_price": 34676.18145009154,
+      "net_pnl": -21.27005532298585,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-01-08T03:00:00+00:00",
+      "exit_time": "2021-01-08T10:00:00+00:00",
+      "entry_price": 37174.303652,
+      "exit_price": 39602.25108987326,
+      "net_pnl": -20.49875449394333,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-01-11T03:00:00+00:00",
+      "exit_time": "2021-01-14T08:00:00+00:00",
+      "entry_price": 36356.657214,
+      "exit_price": 38790.7338094428,
+      "net_pnl": -19.866603704422534,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-01-15T04:00:00+00:00",
+      "exit_time": "2021-02-06T11:00:00+00:00",
+      "entry_price": 38692.26,
+      "exit_price": 40192.99984971429,
+      "net_pnl": -19.468754904898343,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-02-09T11:00:00+00:00",
+      "exit_time": "2021-02-11T13:00:00+00:00",
+      "entry_price": 45632.641646,
+      "exit_price": 47845.20591661491,
+      "net_pnl": -18.77347924113104,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-02-23T17:00:00+00:00",
+      "exit_time": "2021-03-03T12:00:00+00:00",
+      "entry_price": 47351.937718,
+      "exit_price": 52440.14793611503,
+      "net_pnl": -17.995328680833374,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2021-03-05T12:00:00+00:00",
+      "exit_time": "2021-03-05T13:00:00+00:00",
+      "entry_price": 47488.355772,
+      "exit_price": 47640.47,
+      "net_pnl": 1.3674366990172508,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-03-29T21:00:00+00:00",
+      "exit_time": "2021-03-30T09:00:00+00:00",
+      "entry_price": 57270.333642000005,
+      "exit_price": 58673.46741758555,
+      "net_pnl": -18.042950358984985,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-04-18T09:00:00+00:00",
+      "exit_time": "2021-04-25T08:00:00+00:00",
+      "entry_price": 54943.85903,
+      "exit_price": 49693.88679,
+      "net_pnl": 29.911537624143225,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-05-13T09:00:00+00:00",
+      "exit_time": "2021-10-06T13:00:00+00:00",
+      "entry_price": 50005.826834,
+      "exit_price": 53027.10727765252,
+      "net_pnl": -17.979893458068663,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2021-10-22T08:00:00+00:00",
+      "exit_time": "2021-10-22T09:00:00+00:00",
+      "entry_price": 63384.004266,
+      "exit_price": 63556.846088,
+      "net_pnl": 1.5348372415372071,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2021-10-23T09:00:00+00:00",
+      "exit_time": "2021-10-23T10:00:00+00:00",
+      "entry_price": 61097.7171,
+      "exit_price": 60148.65496258,
+      "net_pnl": -18.292279087977374,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-11-03T20:00:00+00:00",
+      "exit_time": "2021-11-08T00:00:00+00:00",
+      "entry_price": 62787.430002,
+      "exit_price": 64250.891896571826,
+      "net_pnl": -17.36355402500136,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2021-12-04T12:00:00+00:00",
+      "exit_time": "2021-12-05T00:00:00+00:00",
+      "entry_price": 46480.362068,
+      "exit_price": 49622.968962985025,
+      "net_pnl": -16.361407527496684,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2021-12-11T03:00:00+00:00",
+      "exit_time": "2021-12-11T04:00:00+00:00",
+      "entry_price": 48258.6498,
+      "exit_price": 48287.3406,
+      "net_pnl": -0.09155016298170243,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-01-22T23:00:00+00:00",
+      "exit_time": "2022-01-24T20:00:00+00:00",
+      "entry_price": 34868.025,
+      "exit_price": 36517.081241571424,
+      "net_pnl": -15.960184793331498,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-01-25T07:00:00+00:00",
+      "exit_time": "2022-01-25T17:00:00+00:00",
+      "entry_price": 35836.721222,
+      "exit_price": 37160.611858244396,
+      "net_pnl": -15.56152507887254,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2022-02-25T00:00:00+00:00",
+      "exit_time": "2022-02-25T01:00:00+00:00",
+      "entry_price": 38336.345736,
+      "exit_price": 38218.624745999994,
+      "net_pnl": -1.3638554347344243,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-03-17T15:00:00+00:00",
+      "exit_time": "2022-03-18T17:00:00+00:00",
+      "entry_price": 40814.8354,
+      "exit_price": 41564.463773365715,
+      "net_pnl": -15.446965879470929,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2022-04-27T08:00:00+00:00",
+      "exit_time": "2022-04-27T09:00:00+00:00",
+      "entry_price": 39120.882611999994,
+      "exit_price": 38972.213998,
+      "net_pnl": -3.5500691620058116,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-05-10T04:00:00+00:00",
+      "exit_time": "2022-05-10T06:00:00+00:00",
+      "entry_price": 30636.42149,
+      "exit_price": 32397.07532372657,
+      "net_pnl": -14.316644945998188,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2022-05-10T06:00:00+00:00",
+      "exit_time": "2022-05-10T07:00:00+00:00",
+      "entry_price": 31834.235574,
+      "exit_price": 32073.593998,
+      "net_pnl": 1.6265955885920822,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2022-05-12T15:00:00+00:00",
+      "exit_time": "2022-05-12T16:00:00+00:00",
+      "entry_price": 29586.856187999998,
+      "exit_price": 29015.455748,
+      "net_pnl": -3.8208363519376056,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-05-13T21:00:00+00:00",
+      "exit_time": "2022-05-15T20:00:00+00:00",
+      "entry_price": 29792.150378000002,
+      "exit_price": 30781.6554780756,
+      "net_pnl": -13.986475045324497,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2022-05-24T10:00:00+00:00",
+      "exit_time": "2022-05-24T11:00:00+00:00",
+      "entry_price": 29345.857998,
+      "exit_price": 29338.471132000002,
+      "net_pnl": -0.9786617995946234,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2022-06-07T20:00:00+00:00",
+      "exit_time": "2022-06-07T21:00:00+00:00",
+      "entry_price": 31065.921941999997,
+      "exit_price": 31344.059934,
+      "net_pnl": 5.726992282999584,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-06-14T09:00:00+00:00",
+      "exit_time": "2022-07-20T14:00:00+00:00",
+      "entry_price": 22605.378020000004,
+      "exit_price": 24142.67416074686,
+      "net_pnl": -13.494147444885103,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2022-07-31T10:00:00+00:00",
+      "exit_time": "2022-07-31T11:00:00+00:00",
+      "entry_price": 23757.010452,
+      "exit_price": 23820.854876,
+      "net_pnl": 1.5794835100684306,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-08-08T22:00:00+00:00",
+      "exit_time": "2022-08-11T01:00:00+00:00",
+      "entry_price": 23845.559934,
+      "exit_price": 24237.32071455823,
+      "net_pnl": -13.73754103784161,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-09-27T17:00:00+00:00",
+      "exit_time": "2022-09-28T16:00:00+00:00",
+      "entry_price": 19106.967842000002,
+      "exit_price": 19628.988568996974,
+      "net_pnl": -12.989846953921363,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2022-10-14T14:00:00+00:00",
+      "exit_time": "2022-10-25T17:00:00+00:00",
+      "entry_price": 19662.226768,
+      "exit_price": 20006.195778496454,
+      "net_pnl": -12.839781817081295,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2023-03-23T15:00:00+00:00",
+      "exit_time": "2023-03-23T16:00:00+00:00",
+      "entry_price": 28050.919062,
+      "exit_price": 28575.143828,
+      "net_pnl": 13.224532747565604,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2023-04-26T23:00:00+00:00",
+      "exit_time": "2023-04-27T00:00:00+00:00",
+      "entry_price": 28292.600348,
+      "exit_price": 29405.0201760696,
+      "net_pnl": -12.460170133806796,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2023-04-27T02:00:00+00:00",
+      "exit_time": "2023-06-21T16:00:00+00:00",
+      "entry_price": 28735.971656,
+      "exit_price": 30023.673761474056,
+      "net_pnl": -12.039528249686231,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2023-08-18T02:00:00+00:00",
+      "exit_time": "2023-08-29T14:00:00+00:00",
+      "entry_price": 26608.167302,
+      "exit_price": 27608.52647460326,
+      "net_pnl": -11.719379411961684,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2023-09-12T23:00:00+00:00",
+      "exit_time": "2023-09-14T00:00:00+00:00",
+      "entry_price": 25964.815998,
+      "exit_price": 26428.243446913886,
+      "net_pnl": -11.689086261152882,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2023-10-16T18:00:00+00:00",
+      "exit_time": "2023-10-16T19:00:00+00:00",
+      "entry_price": 28240.647,
+      "exit_price": 28545.48976,
+      "net_pnl": 4.242384207399141,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2023-10-16T19:00:00+00:00",
+      "exit_time": "2023-10-16T20:00:00+00:00",
+      "entry_price": 28556.91024,
+      "exit_price": 28463.166228000002,
+      "net_pnl": -1.6786493386479824,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2024-01-03T15:00:00+00:00",
+      "exit_time": "2024-01-03T16:00:00+00:00",
+      "entry_price": 42171.564,
+      "exit_price": 43331.96723194285,
+      "net_pnl": -11.183355869651347,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-03-06T06:00:00+00:00",
+      "exit_time": "2024-03-06T07:00:00+00:00",
+      "entry_price": 66420.08136,
+      "exit_price": 65724.072556,
+      "net_pnl": -2.2405109517964243,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-03-06T08:00:00+00:00",
+      "exit_time": "2024-03-06T09:00:00+00:00",
+      "entry_price": 66689.79529200001,
+      "exit_price": 66927.831756,
+      "net_pnl": 0.6151836894982629,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2024-03-12T04:00:00+00:00",
+      "exit_time": "2024-03-12T14:00:00+00:00",
+      "entry_price": 71604.6762,
+      "exit_price": 72741.62590181144,
+      "net_pnl": -11.067430987402151,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-03-15T22:00:00+00:00",
+      "exit_time": "2024-03-15T23:00:00+00:00",
+      "entry_price": 68322.691806,
+      "exit_price": 69090.47914000001,
+      "net_pnl": 2.8966717243338485,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-03-15T23:00:00+00:00",
+      "exit_time": "2024-03-16T00:00:00+00:00",
+      "entry_price": 69118.12086,
+      "exit_price": 69485.940032,
+      "net_pnl": 1.3252721972584678,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-03-20T10:00:00+00:00",
+      "exit_time": "2024-03-20T11:00:00+00:00",
+      "entry_price": 63228.553182,
+      "exit_price": 63028.481781999995,
+      "net_pnl": -1.1576616719090633,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2024-03-26T06:00:00+00:00",
+      "exit_time": "2024-03-26T07:00:00+00:00",
+      "entry_price": 70285.94,
+      "exit_price": 71504.49375342857,
+      "net_pnl": -10.756701589935378,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2024-04-19T23:00:00+00:00",
+      "exit_time": "2024-04-20T17:00:00+00:00",
+      "entry_price": 63999.687502,
+      "exit_price": 65322.96519692897,
+      "net_pnl": -10.32135446148607,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-05-01T19:00:00+00:00",
+      "exit_time": "2024-05-01T20:00:00+00:00",
+      "entry_price": 58925.762796,
+      "exit_price": 57051.69446029795,
+      "net_pnl": -9.820965889959709,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-05-02T00:00:00+00:00",
+      "exit_time": "2024-05-02T01:00:00+00:00",
+      "entry_price": 58376.642994,
+      "exit_price": 57755.74654000001,
+      "net_pnl": -3.296452041285506,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-07-05T16:00:00+00:00",
+      "exit_time": "2024-07-05T17:00:00+00:00",
+      "entry_price": 56674.322598,
+      "exit_price": 56436.86037,
+      "net_pnl": -1.3379349412157453,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2024-08-05T11:00:00+00:00",
+      "exit_time": "2024-08-05T15:00:00+00:00",
+      "entry_price": 51373.7232,
+      "exit_price": 54744.715668068566,
+      "net_pnl": -9.236180916488552,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2024-08-05T21:00:00+00:00",
+      "exit_time": "2024-08-05T22:00:00+00:00",
+      "entry_price": 54404.728769999994,
+      "exit_price": 54361.1256,
+      "net_pnl": -0.2371823686085851,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2024-08-09T10:00:00+00:00",
+      "exit_time": "2024-08-23T14:00:00+00:00",
+      "entry_price": 60747.848,
+      "exit_price": 62253.22186902857,
+      "net_pnl": -9.171200068200319,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2024-09-10T07:00:00+00:00",
+      "exit_time": "2024-09-10T18:00:00+00:00",
+      "entry_price": 56814.6348,
+      "exit_price": 57663.522341245705,
+      "net_pnl": -9.116455839244544,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2024-09-14T09:00:00+00:00",
+      "exit_time": "2024-09-17T15:00:00+00:00",
+      "entry_price": 59961.995202,
+      "exit_price": 60532.53643132611,
+      "net_pnl": -9.150695792776089,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2025-01-27T20:00:00+00:00",
+      "exit_time": "2025-01-27T21:00:00+00:00",
+      "entry_price": 99719.950002,
+      "exit_price": 101365.832778,
+      "net_pnl": 4.670752905475574,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2025-02-03T15:00:00+00:00",
+      "exit_time": "2025-02-03T16:00:00+00:00",
+      "entry_price": 96608.8179,
+      "exit_price": 98822.2316,
+      "net_pnl": 5.165752346935194,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2025-03-07T03:00:00+00:00",
+      "exit_time": "2025-03-07T14:00:00+00:00",
+      "entry_price": 87217.562998,
+      "exit_price": 90828.91229088532,
+      "net_pnl": -8.48540108234889,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2025-04-07T18:00:00+00:00",
+      "exit_time": "2025-04-07T19:00:00+00:00",
+      "entry_price": 79091.895216,
+      "exit_price": 78469.21301800001,
+      "net_pnl": -1.6518755800907925,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2025-04-07T21:00:00+00:00",
+      "exit_time": "2025-04-07T22:00:00+00:00",
+      "entry_price": 78971.051052,
+      "exit_price": 79223.562118,
+      "net_pnl": 0.49189286200568627,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2025-04-08T10:00:00+00:00",
+      "exit_time": "2025-04-09T17:00:00+00:00",
+      "entry_price": 78884.22,
+      "exit_price": 80527.55943428572,
+      "net_pnl": -8.38225211491757,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2025-10-11T02:00:00+00:00",
+      "exit_time": "2025-10-27T06:00:00+00:00",
+      "entry_price": 111073.16092400001,
+      "exit_price": 116094.7380858991,
+      "net_pnl": -7.915244677069767,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "SHORT",
+      "entry_time": "2025-11-21T16:00:00+00:00",
+      "exit_time": "2025-11-23T01:00:00+00:00",
+      "entry_price": 82915.873508,
+      "exit_price": 86129.27020327303,
+      "net_pnl": -7.700276602715652,
+      "exit_reason": "risk_stop"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2025-12-16T07:00:00+00:00",
+      "exit_time": "2025-12-16T08:00:00+00:00",
+      "entry_price": 86525.31160199999,
+      "exit_price": 86004.305698,
+      "net_pnl": -3.4206038143255055,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2025-12-18T07:00:00+00:00",
+      "exit_time": "2025-12-18T08:00:00+00:00",
+      "entry_price": 86663.259186,
+      "exit_price": 86816.46323400001,
+      "net_pnl": 0.5502009655696469,
+      "exit_reason": "delta_flip"
+    },
+    {
+      "side": "LONG",
+      "entry_time": "2025-12-18T08:00:00+00:00",
+      "exit_time": "2025-12-18T09:00:00+00:00",
+      "entry_price": 86851.196766,
+      "exit_price": 86961.584204,
+      "net_pnl": 0.29043615465300926,
+      "exit_reason": "delta_flip"
+    }
+  ]
+}

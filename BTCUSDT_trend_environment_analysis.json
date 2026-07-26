@@ -1,0 +1,716 @@
+{
+  "timeframes": {
+    "30min": {
+      "htf": "4h",
+      "candles": 106235,
+      "group_comparison": {
+        "counts": {
+          "B_failed_start": 33457,
+          "A_real_trend": 12323,
+          "C_noise_range": 5968
+        },
+        "signature_score": {
+          "A_real_trend": 3.5233303578674025,
+          "B_failed_start": 3.55309800639627,
+          "C_noise_range": 3.4819034852546915
+        },
+        "body_pct_of_range": {
+          "A_real_trend": 0.6131948117698247,
+          "B_failed_start": 0.6159612928434556,
+          "C_noise_range": 0.6089904349515013
+        },
+        "upper_wick_pct": {
+          "A_real_trend": 0.18291600203094216,
+          "B_failed_start": 0.1818314062370405,
+          "C_noise_range": 0.18344440733444287
+        },
+        "lower_wick_pct": {
+          "A_real_trend": 0.2038891861992332,
+          "B_failed_start": 0.20220730091950387,
+          "C_noise_range": 0.20756515771405587
+        },
+        "close_location_trendward": {
+          "A_real_trend": 0.5721061099585523,
+          "B_failed_start": 0.6444709200210874,
+          "C_noise_range": 0.5928682463967998
+        },
+        "dist_from_prior_extreme_atr": {
+          "A_real_trend": -1.8778254100743648,
+          "B_failed_start": -1.6183319333830093,
+          "C_noise_range": -1.8233201114372153
+        },
+        "volume_ratio_20": {
+          "A_real_trend": 2.376307101019698,
+          "B_failed_start": 2.1800895669464846,
+          "C_noise_range": 2.1646682304037492
+        },
+        "range_atr_ratio": {
+          "A_real_trend": 1.6059939234406735,
+          "B_failed_start": 1.5067816764512199,
+          "C_noise_range": 1.5176030226077255
+        },
+        "bb_percent_b": {
+          "A_real_trend": 0.5121366284576185,
+          "B_failed_start": 0.5043668565529319,
+          "C_noise_range": 0.5056475471796003
+        },
+        "bb_bandwidth": {
+          "A_real_trend": 0.02597019656915972,
+          "B_failed_start": 0.026209945423590335,
+          "C_noise_range": 0.025871783155293822
+        },
+        "bb_squeeze": {
+          "A_real_trend": 0.20068165219508236,
+          "B_failed_start": 0.20139283259108706,
+          "C_noise_range": 0.20693699731903487
+        },
+        "adx_14": {
+          "A_real_trend": 27.61015541800393,
+          "B_failed_start": 27.555944227159213,
+          "C_noise_range": 27.603455906105406
+        },
+        "bar1_volume_vs_start": {
+          "A_real_trend": 1.2024626448130136,
+          "B_failed_start": 0.9604262882984712,
+          "C_noise_range": 1.0103031431017777
+        },
+        "bar1_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.19048330693128493,
+          "C_noise_range": 1.0
+        },
+        "bar1_close_location_trendward": {
+          "A_real_trend": 0.7293761722787802,
+          "B_failed_start": 0.35394172549940855,
+          "C_noise_range": 0.6934394589846155
+        },
+        "bar1_opposing_wick_pct": {
+          "A_real_trend": 0.2255577933564586,
+          "B_failed_start": 0.296508763968407,
+          "C_noise_range": 0.28911966347169876
+        },
+        "bar2_volume_vs_start": {
+          "A_real_trend": 1.176641480984112,
+          "B_failed_start": 0.9311287026025622,
+          "C_noise_range": 0.8898234289076867
+        },
+        "bar2_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.1958334578712975,
+          "C_noise_range": 1.0
+        },
+        "bar3_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.28523179005888155,
+          "C_noise_range": 0.5125670241286864
+        },
+        "htf_position_pct": {
+          "A_real_trend": 0.5517745596040408,
+          "B_failed_start": 0.5475532462355923,
+          "C_noise_range": 0.5561658102781013
+        },
+        "htf_range_width_atr": {
+          "A_real_trend": 4.872085274284355,
+          "B_failed_start": 4.871221481699462,
+          "C_noise_range": 4.863793836338533
+        },
+        "htf_dist_to_high_atr": {
+          "A_real_trend": 3.581484365797802,
+          "B_failed_start": 3.607222793490562,
+          "C_noise_range": 3.5387623056255992
+        },
+        "htf_dist_to_low_atr": {
+          "A_real_trend": 4.564976208795675,
+          "B_failed_start": 4.494488249328859,
+          "C_noise_range": 4.608521619661585
+        },
+        "environment_a_rates": {
+          "htf_state": {
+            "range": {
+              "a_rate_pct": 27.179104477611943,
+              "n": 6700
+            },
+            "trend_down": {
+              "a_rate_pct": 26.601310789227295,
+              "n": 18157
+            },
+            "trend_up": {
+              "a_rate_pct": 27.108923194570565,
+              "n": 20923
+            }
+          },
+          "htf_zone": {
+            "middle": {
+              "a_rate_pct": 26.771770655164723,
+              "n": 26894
+            },
+            "near_bottom": {
+              "a_rate_pct": 26.75619834710744,
+              "n": 6776
+            },
+            "near_top": {
+              "a_rate_pct": 27.32702837232454,
+              "n": 12054
+            }
+          },
+          "bb_squeeze_0": {
+            "a_rate_pct": 26.93538242773934,
+            "n": 36569
+          },
+          "bb_squeeze_1": {
+            "a_rate_pct": 26.84833351427641,
+            "n": 9211
+          }
+        }
+      },
+      "endings": {
+        "gradual_weakness": 1264,
+        "opposing_attack": 138,
+        "mixed": 1679,
+        "unknown": 0
+      },
+      "correction_taxonomy": {
+        "deep_structural_test": {
+          "count": 24,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 3.4306091664573337,
+          "mean_duration_bars": 6.083333333333333,
+          "mean_volume_vs_pre_move": 1.2872673309581095
+        },
+        "fast_v_shaped": {
+          "count": 4056,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.9289161364414118,
+          "mean_duration_bars": 2.0,
+          "mean_volume_vs_pre_move": 2.508218481770582
+        },
+        "first_correction_early_trend": {
+          "count": 233,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.5505542044095393,
+          "mean_duration_bars": 3.948497854077253,
+          "mean_volume_vs_pre_move": 1.1152968364904383
+        },
+        "high_volume_absorbed": {
+          "count": 1196,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 2.743385179863728,
+          "mean_duration_bars": 4.116220735785953,
+          "mean_volume_vs_pre_move": 2.6464522718155457
+        },
+        "low_volume_continuation": {
+          "count": 408,
+          "continuation_pct": 99.75490196078431,
+          "mean_depth_atr": 1.4051086609722119,
+          "mean_duration_bars": 4.698529411764706,
+          "mean_volume_vs_pre_move": 0.6284270969261023
+        },
+        "mid_trend_ordinary": {
+          "count": 613,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.7041009891613987,
+          "mean_duration_bars": 4.562805872756933,
+          "mean_volume_vs_pre_move": 1.1386482148921944
+        },
+        "opposing_pressure_correction": {
+          "count": 143,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.761948307274999,
+          "mean_duration_bars": 4.160839160839161,
+          "mean_volume_vs_pre_move": 1.1229824363961933
+        },
+        "slow_multi_wave": {
+          "count": 2564,
+          "continuation_pct": 52.847113884555384,
+          "mean_depth_atr": 4.2117904794887595,
+          "mean_duration_bars": 18.54290171606864,
+          "mean_volume_vs_pre_move": 1.1942871038277616
+        },
+        "turned_into_reversal": {
+          "count": 1871,
+          "continuation_pct": 0.0,
+          "mean_depth_atr": 3.972791671564581,
+          "mean_duration_bars": 6.694281133083912,
+          "mean_volume_vs_pre_move": 1.63562872382345
+        }
+      }
+    },
+    "1h": {
+      "htf": "4h",
+      "candles": 53099,
+      "group_comparison": {
+        "counts": {
+          "B_failed_start": 16275,
+          "A_real_trend": 6104,
+          "C_noise_range": 2931
+        },
+        "signature_score": {
+          "A_real_trend": 3.5573394495412844,
+          "B_failed_start": 3.5770814132104456,
+          "C_noise_range": 3.4936881610371886
+        },
+        "body_pct_of_range": {
+          "A_real_trend": 0.5955027431158297,
+          "B_failed_start": 0.5972752542143787,
+          "C_noise_range": 0.5910580838224476
+        },
+        "upper_wick_pct": {
+          "A_real_trend": 0.19132887467186752,
+          "B_failed_start": 0.19061610983397012,
+          "C_noise_range": 0.19056213009689826
+        },
+        "lower_wick_pct": {
+          "A_real_trend": 0.21316838221230272,
+          "B_failed_start": 0.21210863595165125,
+          "C_noise_range": 0.21837978608065411
+        },
+        "close_location_trendward": {
+          "A_real_trend": 0.5619578701295516,
+          "B_failed_start": 0.6354282954525963,
+          "C_noise_range": 0.5793512191983831
+        },
+        "dist_from_prior_extreme_atr": {
+          "A_real_trend": -1.9134581368814734,
+          "B_failed_start": -1.6480577718230165,
+          "C_noise_range": -1.8851189987850374
+        },
+        "volume_ratio_20": {
+          "A_real_trend": 2.4082460333840805,
+          "B_failed_start": 2.230991115982709,
+          "C_noise_range": 2.241195269331936
+        },
+        "range_atr_ratio": {
+          "A_real_trend": 1.664071506508842,
+          "B_failed_start": 1.5590387171008677,
+          "C_noise_range": 1.5496961557115634
+        },
+        "bb_percent_b": {
+          "A_real_trend": 0.5142143216895698,
+          "B_failed_start": 0.507448431741579,
+          "C_noise_range": 0.5030863634900715
+        },
+        "bb_bandwidth": {
+          "A_real_trend": 0.03797107498892357,
+          "B_failed_start": 0.03833067774084041,
+          "C_noise_range": 0.03818742711618858
+        },
+        "bb_squeeze": {
+          "A_real_trend": 0.18381389252948885,
+          "B_failed_start": 0.1815668202764977,
+          "C_noise_range": 0.195496417604913
+        },
+        "adx_14": {
+          "A_real_trend": 28.590241257424797,
+          "B_failed_start": 28.57551124174466,
+          "C_noise_range": 28.406771076608454
+        },
+        "bar1_volume_vs_start": {
+          "A_real_trend": 1.1888214911289559,
+          "B_failed_start": 0.9428655877018844,
+          "C_noise_range": 0.9854971837081397
+        },
+        "bar1_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.183963133640553,
+          "C_noise_range": 1.0
+        },
+        "bar1_close_location_trendward": {
+          "A_real_trend": 0.7252988417272704,
+          "B_failed_start": 0.35445167563190183,
+          "C_noise_range": 0.6904676843654064
+        },
+        "bar1_opposing_wick_pct": {
+          "A_real_trend": 0.2315987346981396,
+          "B_failed_start": 0.3031268330947933,
+          "C_noise_range": 0.29314704692350435
+        },
+        "bar2_volume_vs_start": {
+          "A_real_trend": 1.1255274784405096,
+          "B_failed_start": 0.8975752804408405,
+          "C_noise_range": 0.855782656412467
+        },
+        "bar2_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.18924731182795698,
+          "C_noise_range": 1.0
+        },
+        "bar3_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.28442396313364054,
+          "C_noise_range": 0.5018764926646195
+        },
+        "htf_position_pct": {
+          "A_real_trend": 0.5507942376744225,
+          "B_failed_start": 0.5462217635822462,
+          "C_noise_range": 0.5469633412371235
+        },
+        "htf_range_width_atr": {
+          "A_real_trend": 4.897105669631383,
+          "B_failed_start": 4.884112813774836,
+          "C_noise_range": 4.926628305644705
+        },
+        "htf_dist_to_high_atr": {
+          "A_real_trend": 3.6368259961686333,
+          "B_failed_start": 3.638722924639194,
+          "C_noise_range": 3.671863274334206
+        },
+        "htf_dist_to_low_atr": {
+          "A_real_trend": 4.5759676314677495,
+          "B_failed_start": 4.527931446202792,
+          "C_noise_range": 4.5673517865853075
+        },
+        "environment_a_rates": {
+          "htf_state": {
+            "range": {
+              "a_rate_pct": 27.22914669223394,
+              "n": 3129
+            },
+            "trend_down": {
+              "a_rate_pct": 26.674786845310592,
+              "n": 9031
+            },
+            "trend_up": {
+              "a_rate_pct": 27.820726098444077,
+              "n": 10219
+            }
+          },
+          "htf_zone": {
+            "middle": {
+              "a_rate_pct": 26.977577078791654,
+              "n": 12844
+            },
+            "near_bottom": {
+              "a_rate_pct": 27.094575404714572,
+              "n": 3521
+            },
+            "near_top": {
+              "a_rate_pct": 28.04532577903683,
+              "n": 6001
+            }
+          },
+          "bb_squeeze_0": {
+            "a_rate_pct": 27.221068735657305,
+            "n": 18302
+          },
+          "bb_squeeze_1": {
+            "a_rate_pct": 27.520235467255333,
+            "n": 4077
+          }
+        }
+      },
+      "endings": {
+        "gradual_weakness": 1334,
+        "opposing_attack": 125,
+        "mixed": 1593,
+        "unknown": 0
+      },
+      "correction_taxonomy": {
+        "deep_structural_test": {
+          "count": 31,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 3.5257347531838183,
+          "mean_duration_bars": 5.451612903225806,
+          "mean_volume_vs_pre_move": 1.2298977823744253
+        },
+        "fast_v_shaped": {
+          "count": 4034,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.9643226186286222,
+          "mean_duration_bars": 2.0,
+          "mean_volume_vs_pre_move": 2.4494054776747807
+        },
+        "first_correction_early_trend": {
+          "count": 257,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.5491814395968435,
+          "mean_duration_bars": 4.1050583657587545,
+          "mean_volume_vs_pre_move": 1.1315863896401572
+        },
+        "high_volume_absorbed": {
+          "count": 1127,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 3.021608222882722,
+          "mean_duration_bars": 4.0186335403726705,
+          "mean_volume_vs_pre_move": 2.7157507986909004
+        },
+        "low_volume_continuation": {
+          "count": 379,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.3691665087885743,
+          "mean_duration_bars": 4.567282321899736,
+          "mean_volume_vs_pre_move": 0.6387245760341654
+        },
+        "mid_trend_ordinary": {
+          "count": 670,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.7283551719765873,
+          "mean_duration_bars": 4.559701492537314,
+          "mean_volume_vs_pre_move": 1.1199562332479451
+        },
+        "opposing_pressure_correction": {
+          "count": 174,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.770658609199731,
+          "mean_duration_bars": 4.155172413793103,
+          "mean_volume_vs_pre_move": 1.1383919892052912
+        },
+        "slow_multi_wave": {
+          "count": 2730,
+          "continuation_pct": 55.824175824175825,
+          "mean_depth_atr": 4.2490746786009455,
+          "mean_duration_bars": 17.986080586080586,
+          "mean_volume_vs_pre_move": 1.2235652049659345
+        },
+        "turned_into_reversal": {
+          "count": 1846,
+          "continuation_pct": 0.0,
+          "mean_depth_atr": 3.8602183947393214,
+          "mean_duration_bars": 6.711267605633803,
+          "mean_volume_vs_pre_move": 1.5461382286020706
+        }
+      }
+    },
+    "4h": {
+      "htf": "1D",
+      "candles": 13246,
+      "group_comparison": {
+        "counts": {
+          "B_failed_start": 3976,
+          "A_real_trend": 1588,
+          "C_noise_range": 721
+        },
+        "signature_score": {
+          "A_real_trend": 3.618387909319899,
+          "B_failed_start": 3.619969818913481,
+          "C_noise_range": 3.549237170596394
+        },
+        "body_pct_of_range": {
+          "A_real_trend": 0.6017309993236195,
+          "B_failed_start": 0.6009009989271247,
+          "C_noise_range": 0.5962039654038058
+        },
+        "upper_wick_pct": {
+          "A_real_trend": 0.18509144480190046,
+          "B_failed_start": 0.18826833358086684,
+          "C_noise_range": 0.1824792296631044
+        },
+        "lower_wick_pct": {
+          "A_real_trend": 0.21317755587448,
+          "B_failed_start": 0.21083066749200852,
+          "C_noise_range": 0.22131680493308972
+        },
+        "close_location_trendward": {
+          "A_real_trend": 0.5816422038093427,
+          "B_failed_start": 0.6197336893859525,
+          "C_noise_range": 0.5656726000885112
+        },
+        "dist_from_prior_extreme_atr": {
+          "A_real_trend": -1.7880458781435646,
+          "B_failed_start": -1.6878428317618304,
+          "C_noise_range": -1.856192754854371
+        },
+        "volume_ratio_20": {
+          "A_real_trend": 2.019294661594443,
+          "B_failed_start": 1.9483335911328525,
+          "C_noise_range": 1.957601164286536
+        },
+        "range_atr_ratio": {
+          "A_real_trend": 1.6708580322885567,
+          "B_failed_start": 1.60105313042184,
+          "C_noise_range": 1.632569705841224
+        },
+        "bb_percent_b": {
+          "A_real_trend": 0.5352091666074278,
+          "B_failed_start": 0.5204714624454861,
+          "C_noise_range": 0.5246358813307492
+        },
+        "bb_bandwidth": {
+          "A_real_trend": 0.07546631228133477,
+          "B_failed_start": 0.07997379117327727,
+          "C_noise_range": 0.0777575871359809
+        },
+        "bb_squeeze": {
+          "A_real_trend": 0.21851385390428213,
+          "B_failed_start": 0.21177062374245473,
+          "C_noise_range": 0.20527045769764216
+        },
+        "adx_14": {
+          "A_real_trend": 28.782434970810794,
+          "B_failed_start": 28.797200168425558,
+          "C_noise_range": 28.989729607881188
+        },
+        "bar1_volume_vs_start": {
+          "A_real_trend": 1.1077909272983755,
+          "B_failed_start": 0.885581427359635,
+          "C_noise_range": 0.9286585063356725
+        },
+        "bar1_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.1823440643863179,
+          "C_noise_range": 1.0
+        },
+        "bar1_close_location_trendward": {
+          "A_real_trend": 0.7194890992401655,
+          "B_failed_start": 0.36782453410153404,
+          "C_noise_range": 0.6743289340086195
+        },
+        "bar1_opposing_wick_pct": {
+          "A_real_trend": 0.2283209078508624,
+          "B_failed_start": 0.3202479033548733,
+          "C_noise_range": 0.2871693880932503
+        },
+        "bar2_volume_vs_start": {
+          "A_real_trend": 1.0038472575998203,
+          "B_failed_start": 0.8266834357076511,
+          "C_noise_range": 0.7645111338345305
+        },
+        "bar2_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.18335010060362172,
+          "C_noise_range": 1.0
+        },
+        "bar3_close_beyond_start": {
+          "A_real_trend": 1.0,
+          "B_failed_start": 0.2809356136820926,
+          "C_noise_range": 0.5173370319001387
+        },
+        "htf_position_pct": {
+          "A_real_trend": 0.5767710534575108,
+          "B_failed_start": 0.5658365092283126,
+          "C_noise_range": 0.5634480403702964
+        },
+        "htf_range_width_atr": {
+          "A_real_trend": 4.707351394128081,
+          "B_failed_start": 4.707482545964981,
+          "C_noise_range": 4.755093514676034
+        },
+        "htf_dist_to_high_atr": {
+          "A_real_trend": 3.332000269094215,
+          "B_failed_start": 3.4107178261872138,
+          "C_noise_range": 3.417063684698527
+        },
+        "htf_dist_to_low_atr": {
+          "A_real_trend": 4.699946542070712,
+          "B_failed_start": 4.581850295717687,
+          "C_noise_range": 4.5916962435590785
+        },
+        "environment_a_rates": {
+          "htf_state": {
+            "range": {
+              "a_rate_pct": 29.545454545454547,
+              "n": 748
+            },
+            "trend_down": {
+              "a_rate_pct": 27.761767531219984,
+              "n": 2082
+            },
+            "trend_up": {
+              "a_rate_pct": 28.85881492318947,
+              "n": 2734
+            }
+          },
+          "htf_zone": {
+            "middle": {
+              "a_rate_pct": 28.41133816743573,
+              "n": 3034
+            },
+            "near_bottom": {
+              "a_rate_pct": 27.102803738317753,
+              "n": 749
+            },
+            "near_top": {
+              "a_rate_pct": 29.391699829448548,
+              "n": 1759
+            }
+          },
+          "bb_squeeze_0": {
+            "a_rate_pct": 28.365714285714283,
+            "n": 4375
+          },
+          "bb_squeeze_1": {
+            "a_rate_pct": 29.184188393608075,
+            "n": 1189
+          }
+        }
+      },
+      "endings": {
+        "gradual_weakness": 710,
+        "opposing_attack": 70,
+        "mixed": 807,
+        "unknown": 0
+      },
+      "correction_taxonomy": {
+        "deep_structural_test": {
+          "count": 54,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 4.109214953831057,
+          "mean_duration_bars": 5.0,
+          "mean_volume_vs_pre_move": 1.2773269109096932
+        },
+        "fast_v_shaped": {
+          "count": 2184,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 2.1470192102886174,
+          "mean_duration_bars": 2.0,
+          "mean_volume_vs_pre_move": 2.057230978068191
+        },
+        "first_correction_early_trend": {
+          "count": 171,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.6768045050667433,
+          "mean_duration_bars": 4.157894736842105,
+          "mean_volume_vs_pre_move": 1.141718917845011
+        },
+        "high_volume_absorbed": {
+          "count": 680,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 3.247157579235132,
+          "mean_duration_bars": 3.9941176470588236,
+          "mean_volume_vs_pre_move": 2.1738693505249085
+        },
+        "late_trend_correction": {
+          "count": 2,
+          "continuation_pct": 0.0,
+          "mean_depth_atr": 4.462479761638454,
+          "mean_duration_bars": 3.5,
+          "mean_volume_vs_pre_move": 1.8077954636035884
+        },
+        "low_volume_continuation": {
+          "count": 231,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.380500449266319,
+          "mean_duration_bars": 4.913419913419913,
+          "mean_volume_vs_pre_move": 0.6381000015657945
+        },
+        "mid_trend_ordinary": {
+          "count": 451,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.7558014945585172,
+          "mean_duration_bars": 4.541019955654102,
+          "mean_volume_vs_pre_move": 1.1382478350619036
+        },
+        "opposing_pressure_correction": {
+          "count": 138,
+          "continuation_pct": 100.0,
+          "mean_depth_atr": 1.8099892111901137,
+          "mean_duration_bars": 4.166666666666667,
+          "mean_volume_vs_pre_move": 1.120364761832083
+        },
+        "slow_multi_wave": {
+          "count": 1508,
+          "continuation_pct": 58.55437665782494,
+          "mean_depth_atr": 4.850574496609071,
+          "mean_duration_bars": 17.856763925729442,
+          "mean_volume_vs_pre_move": 1.1807102862699979
+        },
+        "turned_into_reversal": {
+          "count": 960,
+          "continuation_pct": 0.0,
+          "mean_depth_atr": 3.8831694350839707,
+          "mean_duration_bars": 6.646875,
+          "mean_volume_vs_pre_move": 1.4434671873415301
+        }
+      }
+    }
+  }
+}
