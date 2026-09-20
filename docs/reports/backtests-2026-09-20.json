@@ -1,0 +1,1665 @@
+{
+  "review_date": "2026-09-20",
+  "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+  "python": "3.11.2",
+  "assessment": "Exploratory historical mirror results; not certification of CoinEx or live performance",
+  "no_parameter_optimization": true,
+  "scenario_plan": [
+    {
+      "name": "core_net_full",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "start": null,
+      "end_exclusive": "2026-07-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "core_stress_full",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 10,
+        "slippage_bps": 10,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "start": null,
+      "end_exclusive": "2026-07-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 2
+    },
+    {
+      "name": "core_zero_cost_DIAGNOSTIC",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 0,
+        "slippage_bps": 0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "start": null,
+      "end_exclusive": "2026-07-01",
+      "historical_funding": false,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "core_period_2024",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "start": "2024-01-01",
+      "end_exclusive": "2025-01-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "core_period_2025",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "start": "2025-01-01",
+      "end_exclusive": "2026-01-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "core_period_2026",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "start": "2026-01-01",
+      "end_exclusive": "2026-07-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "combined_net_full",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "start": null,
+      "end_exclusive": "2026-07-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "combined_stress_full",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 10,
+        "slippage_bps": 10,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "start": null,
+      "end_exclusive": "2026-07-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 2
+    },
+    {
+      "name": "combined_zero_cost_DIAGNOSTIC",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 0,
+        "slippage_bps": 0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "start": null,
+      "end_exclusive": "2026-07-01",
+      "historical_funding": false,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "combined_period_2024",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "start": "2024-01-01",
+      "end_exclusive": "2025-01-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "combined_period_2025",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "start": "2025-01-01",
+      "end_exclusive": "2026-01-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "combined_period_2026",
+      "source": "binance",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "start": "2026-01-01",
+      "end_exclusive": "2026-07-01",
+      "historical_funding": true,
+      "additional_adverse_funding_bps_8h": 0
+    },
+    {
+      "name": "bybit_core_funding_proxy",
+      "source": "bybit",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "start": null,
+      "end_exclusive": "2025-12-01",
+      "historical_funding": false,
+      "additional_adverse_funding_bps_8h": 1
+    },
+    {
+      "name": "bybit_core_stress_funding_proxy",
+      "source": "bybit",
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 10,
+        "slippage_bps": 10,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "start": null,
+      "end_exclusive": "2025-12-01",
+      "historical_funding": false,
+      "additional_adverse_funding_bps_8h": 2
+    }
+  ],
+  "results": {
+    "core_net_full": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 6980.30674337,
+        "net_return_pct": -30.196932566300006,
+        "cagr_pct": -5.457530962021783,
+        "max_drawdown_close_to_close_pct": -33.80226748194166,
+        "profit_factor_net": 0.7618124414910997,
+        "trades": 765,
+        "win_rate_pct": 54.77124183006536,
+        "average_net_pnl": -3.9473114465751626,
+        "fees_paid": 2926.44537251,
+        "funding_paid_net": 26.88046092,
+        "daily_sharpe_365_no_risk_free": -1.104467244043721,
+        "exposure_bar_pct": 7.7717623593104435,
+        "bankrupt_at_any_close": false,
+        "long_trades": 408,
+        "short_trades": 357,
+        "start_utc": "2020-02-03T08:00:00+00:00",
+        "end_utc_exclusive": "2026-07-01T00:00:00+00:00",
+        "warmup_bars": 800,
+        "evaluation_bars": 56152,
+        "buy_hold_price_return_pct_gross": 525.2576549663928
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "core_stress_full": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 10,
+        "slippage_bps": 10,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 2,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 3944.02178203,
+        "net_return_pct": -60.559782179699994,
+        "cagr_pct": -13.518884246526087,
+        "max_drawdown_close_to_close_pct": -61.91337154804928,
+        "profit_factor_net": 0.47394247928563793,
+        "trades": 761,
+        "win_rate_pct": 44.54664914586071,
+        "average_net_pnl": -7.957921442798948,
+        "fees_paid": 3454.86461964,
+        "funding_paid_net": 261.61168357,
+        "daily_sharpe_365_no_risk_free": -3.011882699112432,
+        "exposure_bar_pct": 8.140404616042172,
+        "bankrupt_at_any_close": false,
+        "long_trades": 408,
+        "short_trades": 353,
+        "start_utc": "2020-02-03T08:00:00+00:00",
+        "end_utc_exclusive": "2026-07-01T00:00:00+00:00",
+        "warmup_bars": 800,
+        "evaluation_bars": 56152,
+        "buy_hold_price_return_pct_gross": 525.2576549663928
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "core_zero_cost_DIAGNOSTIC": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 0,
+        "slippage_bps": 0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": false,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 10662.48122788,
+        "net_return_pct": 6.6248122788000074,
+        "cagr_pct": 1.0064275999356775,
+        "max_drawdown_close_to_close_pct": -9.766688583296046,
+        "profit_factor_net": 1.0460085348133117,
+        "trades": 766,
+        "win_rate_pct": 59.007832898172325,
+        "average_net_pnl": 0.8648579998433418,
+        "fees_paid": 0.0,
+        "funding_paid_net": 0.0,
+        "daily_sharpe_365_no_risk_free": 0.21582219586532883,
+        "exposure_bar_pct": 7.743268271833594,
+        "bankrupt_at_any_close": false,
+        "long_trades": 409,
+        "short_trades": 357,
+        "start_utc": "2020-02-03T08:00:00+00:00",
+        "end_utc_exclusive": "2026-07-01T00:00:00+00:00",
+        "warmup_bars": 800,
+        "evaluation_bars": 56152,
+        "buy_hold_price_return_pct_gross": 525.2576549663928
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "core_period_2024": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 9297.15800737,
+        "net_return_pct": -7.028419926299989,
+        "cagr_pct": -7.014534816671613,
+        "max_drawdown_close_to_close_pct": -7.424199215128279,
+        "profit_factor_net": 0.7134892153833788,
+        "trades": 136,
+        "win_rate_pct": 58.088235294117645,
+        "average_net_pnl": -5.167955828161764,
+        "fees_paid": 597.78737683,
+        "funding_paid_net": 11.18747773,
+        "daily_sharpe_365_no_risk_free": -1.49140613611935,
+        "exposure_bar_pct": 9.460382513661202,
+        "bankrupt_at_any_close": false,
+        "long_trades": 77,
+        "short_trades": 59,
+        "start_utc": "2024-01-01T00:00:00+00:00",
+        "end_utc_exclusive": "2025-01-01T00:00:00+00:00",
+        "warmup_bars": 35064,
+        "evaluation_bars": 8784,
+        "buy_hold_price_return_pct_gross": 121.08262040932077
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "core_period_2025": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 9230.04939222,
+        "net_return_pct": -7.699506077800001,
+        "cagr_pct": -7.704571130298854,
+        "max_drawdown_close_to_close_pct": -9.800345853468883,
+        "profit_factor_net": 0.7162484048635807,
+        "trades": 118,
+        "win_rate_pct": 54.23728813559322,
+        "average_net_pnl": -6.5250051506779645,
+        "fees_paid": 630.78139343,
+        "funding_paid_net": 1.34230559,
+        "daily_sharpe_365_no_risk_free": -1.3975694777711083,
+        "exposure_bar_pct": 8.367579908675799,
+        "bankrupt_at_any_close": false,
+        "long_trades": 61,
+        "short_trades": 57,
+        "start_utc": "2025-01-01T00:00:00+00:00",
+        "end_utc_exclusive": "2026-01-01T00:00:00+00:00",
+        "warmup_bars": 43848,
+        "evaluation_bars": 8760,
+        "buy_hold_price_return_pct_gross": -6.350268522952729
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "core_period_2026": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 9389.52058455,
+        "net_return_pct": -6.104794154499993,
+        "cagr_pct": -11.936563806342393,
+        "max_drawdown_close_to_close_pct": -7.010824671587946,
+        "profit_factor_net": 0.5307699211039457,
+        "trades": 58,
+        "win_rate_pct": 58.62068965517241,
+        "average_net_pnl": -10.525507162931035,
+        "fees_paid": 282.99760885,
+        "funding_paid_net": -0.63433976,
+        "daily_sharpe_365_no_risk_free": -2.559076424523844,
+        "exposure_bar_pct": 8.7707182320442,
+        "bankrupt_at_any_close": false,
+        "long_trades": 26,
+        "short_trades": 32,
+        "start_utc": "2026-01-01T00:00:00+00:00",
+        "end_utc_exclusive": "2026-07-01T00:00:00+00:00",
+        "warmup_bars": 52608,
+        "evaluation_bars": 4344,
+        "buy_hold_price_return_pct_gross": -33.10519665374171
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "combined_net_full": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 4612.66701343,
+        "net_return_pct": -53.87332986569999,
+        "cagr_pct": -11.37854072412664,
+        "max_drawdown_close_to_close_pct": -57.829146980550085,
+        "profit_factor_net": 0.7861632080693881,
+        "trades": 1723,
+        "win_rate_pct": 54.49796865931515,
+        "average_net_pnl": -3.1267167652756824,
+        "fees_paid": 5765.32972327,
+        "funding_paid_net": 54.37434086,
+        "daily_sharpe_365_no_risk_free": -1.5941126258898612,
+        "exposure_bar_pct": 16.319988602365008,
+        "bankrupt_at_any_close": false,
+        "long_trades": 852,
+        "short_trades": 871,
+        "start_utc": "2020-02-03T08:00:00+00:00",
+        "end_utc_exclusive": "2026-07-01T00:00:00+00:00",
+        "warmup_bars": 800,
+        "evaluation_bars": 56152,
+        "buy_hold_price_return_pct_gross": 525.2576549663928
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "combined_stress_full": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 10,
+        "slippage_bps": 10,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 2,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 1373.86214818,
+        "net_return_pct": -86.26137851819999,
+        "cagr_pct": -26.64620317331202,
+        "max_drawdown_close_to_close_pct": -86.91306887312902,
+        "profit_factor_net": 0.524299029219546,
+        "trades": 1699,
+        "win_rate_pct": 45.438493231312535,
+        "average_net_pnl": -5.077185315962331,
+        "fees_paid": 5418.87334119,
+        "funding_paid_net": 367.34821751,
+        "daily_sharpe_365_no_risk_free": -4.4076379261388405,
+        "exposure_bar_pct": 16.9593246901268,
+        "bankrupt_at_any_close": false,
+        "long_trades": 841,
+        "short_trades": 858,
+        "start_utc": "2020-02-03T08:00:00+00:00",
+        "end_utc_exclusive": "2026-07-01T00:00:00+00:00",
+        "warmup_bars": 800,
+        "evaluation_bars": 56152,
+        "buy_hold_price_return_pct_gross": 525.2576549663928
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "combined_zero_cost_DIAGNOSTIC": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 0,
+        "slippage_bps": 0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": false,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 11666.82324419,
+        "net_return_pct": 16.66823244190001,
+        "cagr_pct": 2.4358807582529396,
+        "max_drawdown_close_to_close_pct": -18.655170387944796,
+        "profit_factor_net": 1.0460523105037907,
+        "trades": 1727,
+        "win_rate_pct": 58.88824551244934,
+        "average_net_pnl": 0.9651553237927041,
+        "fees_paid": 0.0,
+        "funding_paid_net": 0.0,
+        "daily_sharpe_365_no_risk_free": 0.34006455285540205,
+        "exposure_bar_pct": 16.20423137199031,
+        "bankrupt_at_any_close": false,
+        "long_trades": 855,
+        "short_trades": 872,
+        "start_utc": "2020-02-03T08:00:00+00:00",
+        "end_utc_exclusive": "2026-07-01T00:00:00+00:00",
+        "warmup_bars": 800,
+        "evaluation_bars": 56152,
+        "buy_hold_price_return_pct_gross": 525.2576549663928
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "combined_period_2024": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 8210.58468787,
+        "net_return_pct": -17.894153121300004,
+        "cagr_pct": -17.860974150392984,
+        "max_drawdown_close_to_close_pct": -18.569713451226445,
+        "profit_factor_net": 0.6672791553085266,
+        "trades": 299,
+        "win_rate_pct": 55.18394648829432,
+        "average_net_pnl": -5.9846665957525085,
+        "fees_paid": 1174.51758951,
+        "funding_paid_net": 12.62377483,
+        "daily_sharpe_365_no_risk_free": -2.740670482384911,
+        "exposure_bar_pct": 18.044171220400727,
+        "bankrupt_at_any_close": false,
+        "long_trades": 159,
+        "short_trades": 140,
+        "start_utc": "2024-01-01T00:00:00+00:00",
+        "end_utc_exclusive": "2025-01-01T00:00:00+00:00",
+        "warmup_bars": 35064,
+        "evaluation_bars": 8784,
+        "buy_hold_price_return_pct_gross": 121.08262040932077
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "combined_period_2025": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 8163.2971491,
+        "net_return_pct": -18.367028509000004,
+        "cagr_pct": -18.378374532569598,
+        "max_drawdown_close_to_close_pct": -20.05153044673128,
+        "profit_factor_net": 0.6641457368420883,
+        "trades": 258,
+        "win_rate_pct": 52.325581395348834,
+        "average_net_pnl": -7.119003298062014,
+        "fees_paid": 1208.27185375,
+        "funding_paid_net": 2.95003082,
+        "daily_sharpe_365_no_risk_free": -2.412958477349691,
+        "exposure_bar_pct": 17.203196347031962,
+        "bankrupt_at_any_close": false,
+        "long_trades": 119,
+        "short_trades": 139,
+        "start_utc": "2025-01-01T00:00:00+00:00",
+        "end_utc_exclusive": "2026-01-01T00:00:00+00:00",
+        "warmup_bars": 43848,
+        "evaluation_bars": 8760,
+        "buy_hold_price_return_pct_gross": -6.350268522952729
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "combined_period_2026": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "SpaciousAbhi/binance-futures-backtest-research",
+        "blob": "112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "commit": "4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1",
+        "path": "data/processed/BTCUSDT_1h_processed.csv",
+        "sha256": "bf4e392e379311e54da8c2b2a4ab50446769a38cfc2e6d1b22e4a992a73941a3",
+        "claimed_exchange": "Binance USD-M perpetual futures",
+        "source_url": "https://github.com/SpaciousAbhi/binance-futures-backtest-research/blob/4388b2cc2b7b5ca7d9cb81a29b39a14ca940b4a1/data/processed/BTCUSDT_1h_processed.csv",
+        "blob_api_url": "https://api.github.com/repos/SpaciousAbhi/binance-futures-backtest-research/git/blobs/112e4a1f87db518fac0566220641f6ab27dc1cad",
+        "normalized_path": "binance_BTCUSDT_1h.csv",
+        "normalized_sha256": "ab988e82550e42a2d91c009158087b4d31618ee72107302f1b20a2a71aee1cd4",
+        "rows": 56953,
+        "start_ms": 1577836800000,
+        "end_ms": 1782867600000,
+        "taker_flow_present": true,
+        "funding": {
+          "path": "binance_funding.csv",
+          "sha256": "73e2530286bf7cc9ffff508bd1dbd88d1ff619f790a7db034e7ffceec54373e5",
+          "settlements": 7120,
+          "timestamp_policy": "settlement timestamp floored to 1h; carry positions charged at candle open",
+          "price_policy": "candle open used as notional price, NOT historical mark price"
+        },
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": true,
+        "additional_adverse_funding_bps_8h": 0,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 8512.57905115,
+        "net_return_pct": -14.8742094885,
+        "cagr_pct": -27.745232484663674,
+        "max_drawdown_close_to_close_pct": -17.05478338167723,
+        "profit_factor_net": 0.5302674225978486,
+        "trades": 149,
+        "win_rate_pct": 53.02013422818792,
+        "average_net_pnl": -9.982690931879196,
+        "fees_paid": 703.20578241,
+        "funding_paid_net": -1.87743268,
+        "daily_sharpe_365_no_risk_free": -4.281743932322833,
+        "exposure_bar_pct": 20.534069981583794,
+        "bankrupt_at_any_close": false,
+        "long_trades": 59,
+        "short_trades": 90,
+        "start_utc": "2026-01-01T00:00:00+00:00",
+        "end_utc_exclusive": "2026-07-01T00:00:00+00:00",
+        "warmup_bars": 52608,
+        "evaluation_bars": 4344,
+        "buy_hold_price_return_pct_gross": -33.10519665374171
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "bybit_core_funding_proxy": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 6.0,
+        "slippage_bps": 2.0,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "mestoness/btc-eth-candles-history",
+        "blob": "5c552f546d4e5fabb7be756d855db8f879059731",
+        "commit": "df3095a22122bb52eef77673fce5879d80193cd2",
+        "path": "BTCUSDT_60.csv",
+        "sha256": "1991ee846691d76266a7ad1a771660395b37f41a8329b8b1c402ae154bf80db4",
+        "claimed_exchange": "Bybit USDT perpetual futures",
+        "source_url": "https://github.com/mestoness/btc-eth-candles-history/blob/df3095a22122bb52eef77673fce5879d80193cd2/BTCUSDT_60.csv",
+        "blob_api_url": "https://api.github.com/repos/mestoness/btc-eth-candles-history/git/blobs/5c552f546d4e5fabb7be756d855db8f879059731",
+        "normalized_path": "bybit_BTCUSDT_1h.csv",
+        "normalized_sha256": "8cc49acd2f3dfbd2c9763a107677e9d1a0aa99413dbe522f70b7282afeb8f35f",
+        "rows": 49957,
+        "start_ms": 1585130400000,
+        "end_ms": 1764975600000,
+        "taker_flow_present": false,
+        "funding": null,
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": false,
+        "additional_adverse_funding_bps_8h": 1,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 7628.47224335,
+        "net_return_pct": -23.715277566500003,
+        "cagr_pct": -4.723757987690169,
+        "max_drawdown_close_to_close_pct": -26.27488112187857,
+        "profit_factor_net": 0.7882430359928765,
+        "trades": 683,
+        "win_rate_pct": 54.319180087847734,
+        "average_net_pnl": -3.4722221912884335,
+        "fees_paid": 2647.25665037,
+        "funding_paid_net": 150.494827,
+        "daily_sharpe_365_no_risk_free": -0.9466916697550436,
+        "exposure_bar_pct": 8.052938537460745,
+        "bankrupt_at_any_close": false,
+        "long_trades": 369,
+        "short_trades": 314,
+        "start_utc": "2020-04-27T18:00:00+00:00",
+        "end_utc_exclusive": "2025-12-01T00:00:00+00:00",
+        "warmup_bars": 800,
+        "evaluation_bars": 49038,
+        "buy_hold_price_return_pct_gross": 1079.1173782478131
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    },
+    "bybit_core_stress_funding_proxy": {
+      "schema_version": 1,
+      "code_sha256": "0999fb3d9d4f7ac22ac63824d85eaf0a3035999aae36d11a14990b1dd76975ee",
+      "environment": {
+        "python": "3.11.2",
+        "numpy": "2.4.6",
+        "pandas": "3.0.6",
+        "runtime_lock_sha256": "3fc7fc1afb83a7c7f43e1a95c4f11763a083135575d5cac4d5e9e80dbf314ea2"
+      },
+      "config": {
+        "starting_equity": 10000.0,
+        "risk_per_trade": 0.01,
+        "max_daily_loss": 0.03,
+        "max_leverage": 2.0,
+        "fee_bps": 10,
+        "slippage_bps": 10,
+        "quantity_step": 1e-06,
+        "hold_bars": 10,
+        "enable_whale": false
+      },
+      "provenance": {
+        "schema_version": 1,
+        "source_kind": "unverified_third_party_historical_mirror",
+        "repository": "mestoness/btc-eth-candles-history",
+        "blob": "5c552f546d4e5fabb7be756d855db8f879059731",
+        "commit": "df3095a22122bb52eef77673fce5879d80193cd2",
+        "path": "BTCUSDT_60.csv",
+        "sha256": "1991ee846691d76266a7ad1a771660395b37f41a8329b8b1c402ae154bf80db4",
+        "claimed_exchange": "Bybit USDT perpetual futures",
+        "source_url": "https://github.com/mestoness/btc-eth-candles-history/blob/df3095a22122bb52eef77673fce5879d80193cd2/BTCUSDT_60.csv",
+        "blob_api_url": "https://api.github.com/repos/mestoness/btc-eth-candles-history/git/blobs/5c552f546d4e5fabb7be756d855db8f879059731",
+        "normalized_path": "bybit_BTCUSDT_1h.csv",
+        "normalized_sha256": "8cc49acd2f3dfbd2c9763a107677e9d1a0aa99413dbe522f70b7282afeb8f35f",
+        "rows": 49957,
+        "start_ms": 1585130400000,
+        "end_ms": 1764975600000,
+        "taker_flow_present": false,
+        "funding": null,
+        "quality_checks": [
+          "finite OHLCV",
+          "hourly UTC alignment",
+          "OHLC bounds",
+          "nonnegative volume",
+          "no duplicates",
+          "strict hourly continuity",
+          "closed candles only"
+        ],
+        "limitations": [
+          "Not CoinEx data",
+          "Original exchange checksums could not be verified",
+          "Historical rates, if present, are from the same third-party mirror"
+        ],
+        "historical_funding_used": false,
+        "additional_adverse_funding_bps_8h": 2,
+        "funding_coverage_policy": "complete UTC 8h settlements required when historical funding is used"
+      },
+      "summary": {
+        "initial_equity": 10000.0,
+        "final_equity": 4478.1203571,
+        "net_return_pct": -55.21879642900001,
+        "cagr_pct": -13.377619946066455,
+        "max_drawdown_close_to_close_pct": -55.72817685405895,
+        "profit_factor_net": 0.4690838907582995,
+        "trades": 672,
+        "win_rate_pct": 45.089285714285715,
+        "average_net_pnl": -8.217082801934524,
+        "fees_paid": 3112.69402415,
+        "funding_paid_net": 225.7290414,
+        "daily_sharpe_365_no_risk_free": -3.028790675580016,
+        "exposure_bar_pct": 8.305803662465843,
+        "bankrupt_at_any_close": false,
+        "long_trades": 365,
+        "short_trades": 307,
+        "start_utc": "2020-04-27T18:00:00+00:00",
+        "end_utc_exclusive": "2025-12-01T00:00:00+00:00",
+        "warmup_bars": 800,
+        "evaluation_bars": 49038,
+        "buy_hold_price_return_pct_gross": 1079.1173782478131
+      },
+      "execution_contract": {
+        "entries": "next candle open plus adverse slippage",
+        "stops": "opening gaps first, then stop-first if ambiguous",
+        "trailing": "updated after old stop/target checks; effective next bar",
+        "time_exit": "next open after 10 held hourly bars (default)",
+        "funding": "carry positions only; candle-open notional approximation",
+        "end_of_data": "forced close with exit costs"
+      },
+      "limitations": [
+        "No order-book depth/latency/partial-fill or liquidation engine",
+        "Drawdown is hourly close-to-close, not tick or intrabar drawdown",
+        "No parameter search was performed; split results are exploratory, not a blind preregistered trial",
+        "Passing software tests is not evidence of profitability"
+      ]
+    }
+  }
+}
